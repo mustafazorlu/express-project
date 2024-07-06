@@ -1,0 +1,182 @@
+<table width="700" align="center" cellspacing="0" cellpadding="0"
+    style="background-color:#fff; font-family:Arial, Helvetica, sans-serif; font-size:13px;">
+    <tbody>
+        <tr>
+            <td valign="top">
+                <table cellpadding="0" cellspacing="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table bgcolor="#ffffff" class="es-header-body" align="center" cellpadding="0"
+                                    cellspacing="0" width="700">
+                                    <tbody>
+                                        <tr>
+                                            <td align="left" style="background-position: center center;  ">
+                                                <!--[if mso]><table width="700" cellpadding="0" cellspacing="0"><tr><td width="350" valign="top"><![endif]-->
+                                                <table cellpadding="0" cellspacing="0" align="center">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <table cellpadding="0" cellspacing="0" width="600">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="600" align="center"
+                                                                                style="border-bottom:35px solid #fff;border-top:40px solid #fff;">
+                                                                                <a target="_blank"
+                                                                                    href="https://{{Domain}}"> <img
+                                                                                        src="https://static.ticimax.cloud/61850/Uploads/Images/logo.jpg"
+                                                                                        style="display: block;"
+                                                                                        width="154" /> </a> </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!--[if mso]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table cellpadding="0" cellspacing="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table bgcolor="#ffffff" align="center" cellpadding="0" cellspacing="0" width="600">
+                                    <tbody>
+                                        <tr>
+                                            <td align="left">
+                                                <table cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="600" align="center" valign="top">
+                                                                <table cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="center"
+                                                                                style="border-top:1px solid #e5e5e5; padding:30px 0;">
+                                                                                <h2
+                                                                                    style="color: #000000; margin:0;padding:0;">
+                                                                                    Sayın {{Name}} {{Surname}},</h2>
+                                                                                <strong>{{Domain}}</strong>'dan
+                                                                                siparişini tamamlamadan çıktığını<br />
+                                                                                farkettik.
+                                                                            </td>
+                                                                        </tr> {{#if GiftVoucher}} <tr>
+                                                                            <td align="center">
+                                                                                <p style="margin:0;padding:0 0 30px 0;">
+                                                                                    Tarafınıza tanımlaşmış olan hediye
+                                                                                    kuponunuzu<br />
+                                                                                    {{GiftVoucher.StartDate}} -
+                                                                                    {{GiftVoucher.EndDate}} tarhileri
+                                                                                    arasında
+                                                                                    kullanabilirsiniz.<br /><br />
+                                                                                    <strong>Kupon
+                                                                                        Bilgisi</strong><br /><br />
+                                                                                    <strong>Kupon Kodu :</strong>
+                                                                                    {{GiftVoucher.GiftVoucherCode}}<br /><br />
+                                                                                    <strong>Kupon Değeri
+                                                                                        :</strong>{{GiftVoucher.GiftVoucherAmount}}
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr> {{/if}}
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table cellpadding="0" cellspacing="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table align="center" cellpadding="0" cellspacing="0" width="600">
+                                    <tbody>
+                                        <tr>
+                                            <td align="left">
+                                                <table align="center" cellpadding="0" cellspacing="0"
+                                                    style="border-collapse:collapse;">
+                                                    <thead>
+                                                        <tr align="center">
+                                                            <th width="70px"
+                                                                style="font-weight:500; font-size:12px; padding:5px 0">
+                                                                ÜRÜN</th>
+                                                            <th width="200px"
+                                                                style="font-weight:500; font-size:12px; padding:5px 0">
+                                                                ÜRÜN ADI</th>
+                                                            <th width="150px"
+                                                                style="font-weight:500; font-size:12px; padding:5px 0">
+                                                                STOK KODU</th>
+                                                            <th width="100px"
+                                                                style="font-weight:500; font-size:12px; padding:5px 0">
+                                                                ADET</th>
+                                                            <th width="100px"
+                                                                style="font-weight:500; font-size:12px; padding:5px 0">
+                                                                TOPLAM ÜRÜN TUTARI</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody> {{#each Products}} <tr align="center"
+                                                            style=" font-size:12px; font-weight:bold;border-top:1px solid #e5e5e5; ">
+                                                            <td style="padding:15px 0; vertical-align:middle;"> <img
+                                                                    style="display:block;" height="105"
+                                                                    src="{{ImagePath}}" /> </td>
+                                                            <td style="vertical-align:middle">{{Name}}</td>
+                                                            <td style="vertical-align:middle">{{Code}}</td>
+                                                            <td style="vertical-align:middle">{{Quantity}}</td>
+                                                            <td style="vertical-align:middle">{{TotalAmount}}</td>
+                                                        </tr> {{/each}} </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table cellpadding="0" cellspacing="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table align="center" cellpadding="0" cellspacing="0" width="600">
+                                    <tbody>
+                                        <tr>
+                                            <td align="left">
+                                                <table cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center"
+                                                                style="padding:40px 0; background-color:#fff;"> <a
+                                                                    href="https://{{Domain}}/Sepetim"
+                                                                    style="background-color:#000; color:#FFF; font-weight:400; font-size:14px;border-radius:20px; text-decoration:none; width:auto;display:inline-block; ">
+                                                                    <span
+                                                                        style="line-height:40px; font-size:14px; padding-left:50px; padding-right:50px;">SİPARİŞİ
+                                                                        TAMAMLA</span> </a> </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
